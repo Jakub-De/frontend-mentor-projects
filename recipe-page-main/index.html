@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryNutmeg: "hsl(14, 45%, 36%)",
+            primaryDarkRaspberry: "hsl(332, 51%, 32%)",
+            neutralWhite: "hsl(0, 0%, 100%)",
+            neutralRoseWhite: "hsl(330, 100%, 98%)",
+            neutralEggshell: "hsl(30, 54%, 90%)",
+            neutralLightGrey: "hsl(30, 18%, 87%)",
+            neutralWengeBrown: "hsl(30, 10%, 34%)",
+            neutralDarkCharcoal: "hsl(24, 5%, 18%)",
+            footerBlue: "hsl(228, 45%, 44%)",
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="lg:bg-neutralEggshell">
+  <div class="font-[Outfit] text-primaryNutmeg lg:bg-neutralWhite lg:w-[740px] lg:mx-auto lg:p-8 lg:rounded-2xl lg:pb-1 lg:my-[120px]">
+    <img src="./assets/images/image-omelette.jpeg" alt="Omelette" class="lg:rounded-xl">
+    <div class="m-8">
+      <h1 class="font-['Young_Serif'] text-4xl text-neutralDarkCharcoal">Simple Omelette Recipe</h1>
+      <p class="my-6 text-neutralWengeBrown text-[15px]">An easy and quick dish, perfect for any meal. This classic
+        omelette combines beaten eggs cooked
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      <div class="bg-neutralRoseWhite rounded-lg px-6 py-4 text-primaryDarkRaspberry font-semibold">
+        <p class="text-lg">Preparation time</p>
+        <ul class="list-disc mx-4 my-2 text-[15px]">
+          <li class="my-2">
+            <p class="text-neutralDarkCharcoal px-4 pe-5 inline-block align-middle">Total<span
+                class="text-neutralWengeBrown font-normal">: Approximately 10 minutes</span></p>
+          </li>
+          <li class="my-2"><span class="text-neutralDarkCharcoal px-4">Preparation<span
+                class="text-neutralWengeBrown font-normal">: 5 minutes</span></span></li>
+          <li class="my-2"><span class="text-neutralDarkCharcoal px-4">Cooking<span
+                class="text-neutralWengeBrown font-normal">: 5 minutes</span></span></li>
+        </ul>
+      </div>
+      <div class="pt-6 pb-2 border-b border-neutralLightGrey">
+        <h3 class="font-['Young_Serif'] text-2xl">Ingredients</h3>
+        <ul class="list-disc m-4 text-[15px]">
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">2-3 large eggs</p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">Salt, to taste</p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">Pepper, to taste</p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">1 tablespoon of butter or oil</p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4  inline-block align-middle">Optional fillings: cheese, diced
+              vegetables, cooked meats, herbs</p>
+          </li>
+        </ul>
+      </div>
+      <div class="pt-6 pb-4 border-b border-neutralLightGrey">
+        <h3 class="font-['Young_Serif'] text-2xl">Instructions</h3>
+        <ol class="list-decimal m-4 text-[15px] font-semibold">
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">Beat the eggs<span class="font-normal">: In a bowl, beat the eggs
+                with a pinch of salt and
+                pepper until they are well mixed.
+                You can add a tablespoon of water or milk for a fluffier texture.</span></p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">Heat the pan<span class="font-normal">: Place a non-stick frying pan
+                over medium heat and add butter or oil.</span></p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">Cook the omelette<span class="font-normal">: Once the butter is
+                melted and bubbling, pour in the eggs. Tilt the pan to ensure
+                the eggs evenly coat the surface.</span></p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">Add fillings (optional)<span class="font-normal">: When the eggs
+                begin to set at the edges but are still slightly runny in the
+                middle, sprinkle your chosen fillings over one half of the omelette.</span></p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">Fold and serve<span class="font-normal">: As the omelette continues
+                to cook, carefully lift one edge and fold it over the
+                fillings. Let it cook for another minute, then slide it onto a plate.</span></p>
+          </li>
+          <li class="my-2">
+            <p class="text-neutralWengeBrown px-4">Enjoy<span class="font-normal">: Serve hot, with additional salt and
+                pepper if needed.</span></p>
+          </li>
+        </ol>
+      </div>
+      <div class="my-6">
+        <h3 class="font-['Young_Serif'] text-2xl">Nutrition</h3>
+        <p class="my-4 text-neutralWengeBrown text-[15px]">The table below shows nutritional values per serving without
+          the additional fillings.</p>
+        <table class="table-fixed text-[15px] w-full">
+          <tbody>
+            <tr class="border-b border-neutralLightGrey">
+              <td class="text-neutralWengeBrown px-6 py-2">Calories</td>
+              <td class="font-bold px-6">277kcal</td>
+            </tr>
+            <tr class="border-b border-neutralLightGrey">
+              <td class="text-neutralWengeBrown px-6 py-2">Carbs</td>
+              <td class="font-bold px-6">0g</td>
+            </tr>
+            <tr class="border-b border-neutralLightGrey">
+              <td class="text-neutralWengeBrown px-6 py-2">Protein</td>
+              <td class="font-bold px-6">20g</td>
+            </tr>
+            <tr class="">
+              <td class="text-neutralWengeBrown px-6 py-2">Fat</td>
+              <td class="font-bold px-6">22g</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden">
+    Calories
+    277kcal
+
+    Carbs
+    0g
+
+    Protein
+    20g
+
+    Fat
+    22g
+  </div>
+
+  <div class="text-center text-xs">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-footerBlue">Frontend
+      Mentor</a>.
+    Coded by <a href="#" class="text-footerBlue">Jakub Debski</a>.
+  </div>
+</body>
+
+</html>

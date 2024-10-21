@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryDarkCyan: "hsl(185, 75%, 39%)",
+            primaryVeryDarkDesaturatedBlue: "hsl(229, 23%, 23%)",
+            primaryDarkGrayishBlue: "hsl(227, 10%, 46%)",
+            neutralDarkGray: "hsl(0, 0%, 59%)",
+            footerBlue: "rgb(62, 82, 163)",
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .info-heading {
+        @apply font-bold text-lg text-primaryVeryDarkDesaturatedBlue;
+      }
+      .info-paragraph {
+        @apply text-[10px] text-primaryDarkGrayishBlue tracking-[0.15em];
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-primaryDarkCyan font-['Kumbh_Sans'] overflow-hidden">
+  <div class="h-screen flex flex-col justify-center items-center">
+    <img src="./images/bg-pattern-top.svg" alt=" "
+      class="absolute h-[100vw] w-screen object-fit -z-10 left-1/2 top-0 -translate-x-full -translate-y-1/2">
+    <img src="./images/bg-pattern-bottom.svg" alt=" "
+      class="absolute h-[100vw] w-screen object-fit -z-10 -translate-x-1/2 top-1/2 left-full">
+    <div class="flex flex-col h-[375px] w-[325px] bg-white rounded-2xl overflow-hidden lg:w-[350px]">
+      <div class="relative grow">
+        <img src="./images/bg-pattern-card.svg" alt=" " class="h-1/2">
+        <img src="./images/image-victor.jpg" alt="Victor"
+          class="rounded-full border-4 border-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div class="h-1/4"></div>
+        <div class="text-center h-1/4">
+          <p class="font-bold text-lg text-primaryVeryDarkDesaturatedBlue leading-6">Victor Crest <span
+              class="mx-1 font-normal text-primaryDarkGrayishBlue">26</span></p>
+          <p class="my-[6px] text-sm text-primaryDarkGrayishBlue">London</p>
+        </div>
+      </div>
+      <div class="text-center border-t flex justify-around items-center p-6 pt-5 mt-1">
+        <div class="w-16">
+          <p class="info-heading">80K</p>
+          <p class="info-paragraph">Followers</p>
+        </div>
+        <div class="w-16">
+          <p class="info-heading">803K</p>
+          <p class="info-paragraph">Likes</p>
+        </div>
+        <div class="w-16">
+          <p class="info-heading">1.4K</p>
+          <p class="info-paragraph">Photos</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-xs mt-2">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="text-footerBlue">Frontend
+        Mentor</a>.
+      Coded by <a href="#" class="text-footerBlue">Jakub Debski</a>.
+    </div>
+  </div>
+</body>
+
+</html>

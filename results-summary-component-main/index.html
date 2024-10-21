@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryLightRed: "hsl(0, 100%, 67%)",
+            primaryOrangeyYellow: "hsl(39, 100%, 56%)",
+            primaryGreenTeal: "hsl(166, 100%, 37%)",
+            primaryCobaltBlue: "hsl(234, 85%, 45%)",
+            neutralWhite: "hsl(0, 0%, 100%)",
+            neutralPaleBlue: "hsl(221, 100%, 96%)",
+            neutralLightLavender: "hsl(241, 100%, 89%)",
+            neutralDarkGrayBlue: "hsl(224, 30%, 27%)",
+            gradientLightSlateBlue: "hsl(252, 100%, 67%)",
+            gradientLightRoyalBlue: "hsl(241, 81%, 54%)",
+            gradientVioletBlue: "hsla(256, 72%, 46%, 1)",
+            gradientPersianBlue: "hsla(241, 72%, 46%, 0)",
+            footerBlue: "hsl(228, 45%, 44%)",
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .score-box {
+        @apply w-full h-8 flex justify-between items-center px-4 py-7 rounded-xl my-4;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-medium font-['Hanken_Grotesk']">
+  <div class="lg:flex lg:h-screen lg:items-center">
+    <div class="lg:mx-auto lg:my- lg:w-[680px] lg:h-[470px] lg:flex lg:rounded-3xl lg:shadow-2xl">
+      <div
+        class="flex flex-col items-center justify-between h-[350px] px-12 py-8 bg-gradient-to-b from-gradientLightSlateBlue to-gradientLightRoyalBlue text-neutralWhite text-center rounded-b-[2rem] lg:h-full lg:w-1/2 lg:rounded-3xl">
+        <h2 class="text-lg lg:text-xl">Your Result</h2>
+        <div
+          class="flex flex-col justify-center h-[120px] w-[120px] rounded-full bg-gradient-to-b from-gradientVioletBlue to-gradientPersianBlue lg:h-[180px] lg:w-[180px]">
+          <p class="text-[3.5rem] leading-none font-extrabold lg:text-[4.5rem]">76</p>
+          <p class="text-sm text-neutralLightLavender">of 100</p>
+        </div>
+        <h3 class="text-2xl font-bold lg:text-3xl">Great</h3>
+        <p class="text-neutralLightLavender">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+      <div class="px-8 py-4 lg:h-full lg:w-1/2">
+        <p class="text-xl font-bold text-neutralDarkGrayBlue mt-2 mb-6 mx-1">Summary</p>
+        <div class="bg-primaryLightRed/15 score-box">
+          <div class="flex items-center">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction icon">
+            <p class="text-primaryLightRed mx-2">Reaction</p>
+          </div>
+          <p class="text-neutralDarkGrayBlue/50"><span class="text-neutralDarkGrayBlue font-bold">80</span> / 100</p>
+        </div>
+        <div class="bg-primaryOrangeyYellow/15 score-box">
+          <div class="flex items-center">
+            <img src="./assets/images/icon-memory.svg" alt="reaction icon">
+            <p class="text-primaryOrangeyYellow mx-2">Memory</p>
+          </div>
+          <p class="text-neutralDarkGrayBlue/50"><span class="text-neutralDarkGrayBlue font-bold">92</span> / 100</p>
+        </div>
+        <div class="bg-primaryGreenTeal/15 score-box">
+          <div class="flex items-center">
+            <img src="./assets/images/icon-verbal.svg" alt="reaction icon">
+            <p class="text-primaryGreenTeal mx-2">Verbal</p>
+          </div>
+          <p class="text-neutralDarkGrayBlue/50"><span class="text-neutralDarkGrayBlue font-bold">61</span> / 100</p>
+        </div>
+        <div class="bg-primaryCobaltBlue/15 score-box">
+          <div class="flex items-center">
+            <img src="./assets/images/icon-visual.svg" alt="reaction icon">
+            <p class="text-primaryCobaltBlue mx-2">Visual</p>
+          </div>
+          <p class="text-neutralDarkGrayBlue/50"><span class="text-neutralDarkGrayBlue font-bold">72</span> / 100</p>
+        </div>
+        <button
+          class="bg-neutralDarkGrayBlue text-neutralWhite w-full h-14 font-bold text-lg rounded-full my-2 duration-200 hover:bg-gradientLightRoyalBlue">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-xs">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-footerBlue">Frontend
+      Mentor</a>.
+    Coded by <a href="#" class="text-footerBlue">Jakub Debski</a>.
+  </div>
+</body>
+
+</html>
