@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryPaleBlue: "hsl(225, 100%, 94%)",
+            primaryBrightBlue: "hsl(245, 75%, 52%)",
+            neutralVeryPaleBlue: "hsl(225, 100%, 98%)",
+            neutralDesaturatedBlue: "hsl(224, 23%, 55%)",
+            neutralDarkBlue: "hsl(223, 47%, 23%)",
+            footerBlue: "hsl(228, 45%, 44%)",
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body
+  class="bg-[url('./images/pattern-background-mobile.svg')] bg-no-repeat font-['Red_Hat_Display'] bg-primaryPaleBlue font-medium text-center lg:bg-[url('./images/pattern-background-desktop.svg')] lg:bg-[length:100%_500px]">
+  <div class="flex justify-center items-center h-screen">
+    <div class="m-6 bg-white rounded-2xl overflow-hidden lg:w-[450px] lg:mx-auto">
+      <img src="./images/illustration-hero.svg" alt="Hero image">
+      <div class="m-6 lg:mx-14 lg:my-8">
+        <h3 class="font-black text-2xl my-6 mt-8 text-neutralDarkBlue lg:text-3xl lg:mt-10">Order Summary</h3>
+        <p class="mx-2 text-neutralDesaturatedBlue">You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!</p>
+        <div class="w-full my-6 bg-neutralVeryPaleBlue p-4 rounded-xl flex items-center lg:p-6">
+          <img src="./images/icon-music.svg" alt=" ">
+          <div class="mx-5">
+            <p class="font-black text-sm text-neutralDarkBlue lg:text-base">Annual Plan</p>
+            <p class="text-sm text-neutralDesaturatedBlue lg:text-base">$59.99/year</p>
+          </div>
+          <button
+            class="ms-auto text-xs text-primaryBrightBlue underline font-black lg:text-sm duration-200 hover:text-[#766cf1] hover:no-underline">Change</button>
+        </div>
+        <button
+          class="w-full rounded-lg bg-primaryBrightBlue text-white py-4 font-black text-sm my-2 shadow-xl shadow-primaryBrightBlue/30 duration-300 hover:bg-[#766cf1]">Proceed
+          to Payment</button>
+        <button
+          class="mx-auto mt-4 mb-2 text-neutralDesaturatedBlue font-black text-sm duration-200 hover:text-neutralDarkBlue">Cancel
+          Order</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-xs">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-footerBlue">Frontend
+      Mentor</a>.
+    Coded by <a href="#" class="text-footerBlue">Jakub Debski</a>.
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primarySoftBlue: "hsl(215, 51%, 70%)",
+            primaryCyan: "hsl(178, 100%, 50%)",
+            neutralVeryDarkBlueMainBG: "hsl(217, 54%, 11%)",
+            neutralVeryDarkBlueCardBG: "hsl(216, 50%, 16%)",
+            neutralVeryDarkBlueLine: "hsl(215, 32%, 27%)",
+            neutralWhite: "hsl(0, 0%, 100%)",
+            footerBlue: "hsl(228, 45%, 44%)",
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-neutralVeryDarkBlueMainBG text-neutralWhite font-[Outfit]">
+  <div class="flex h-screen justify-center items-center">
+    <div class="bg-neutralVeryDarkBlueCardBG w-[325px] mx-auto p-6 rounded-xl">
+      <div class="relative">
+        <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="rounded-lg">
+        <div
+          class="absolute top-0 left-0 h-full w-full rounded-lg bg-no-repeat bg-center bg-primaryCyan/45 bg-[url('./images/icon-view.svg')] duration-500 opacity-0 hover:opacity-100">
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold my-5 duration-300 hover:text-primaryCyan">Equilibrium #3429</h3>
+      <p class="font-light text-primarySoftBlue">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="flex items-center my-4">
+        <img src="./images/icon-ethereum.svg" alt=" " class="">
+        <span class="me-auto ms-1 text-primaryCyan font-semibold">0.041 ETH</span>
+        <img src="./images/icon-clock.svg" alt=" ">
+        <span class="text-primarySoftBlue ms-1">3 days left</span>
+      </div>
+      <div class="h-px bg-neutralVeryDarkBlueLine"></div>
+      <div class="flex items-center mt-4">
+        <img src="./images/image-avatar.png" alt="Jules Wyvern" class="h-8 border rounded-full">
+        <p class="mx-4 font-light text-primarySoftBlue">Creation of <span
+            class="font-normal text-neutralWhite duration-300 hover:text-primaryCyan">Jules Wyvern</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-xs">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-footerBlue">Frontend
+      Mentor</a>.
+    Coded by <a href="#" class="text-footerBlue">Jakub Debski</a>.
+  </div>
+</body>
+
+</html>

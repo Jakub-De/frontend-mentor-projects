@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryViolet: "hsl(257, 40%, 49%)",
+            primarySoftMagenta: "hsl(300, 69%, 71%)",
+            footerBlue: "rgb(62, 82, 163)",
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .btn-fa {
+        @apply rounded-full border border-white text-xs h-7 w-7 mx-1 duration-300 lg:text-lg lg:h-10 lg:w-10 lg:mx-2 hover:border-primarySoftMagenta hover:text-primarySoftMagenta;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-primaryViolet text-white font-[Poppins] text-center lg:text-left">
+  <img src="./images/bg-mobile.svg" alt=" " class="absolute -z-10 top-0 w-screen lg:hidden">
+  <img src="./images/bg-desktop.svg" alt=" " class="hidden absolute -z-10 top-0 h-screen lg:block">
+  <div class="m-8 lg:mx-16 lg:my-12">
+    <img src="./images/logo.svg" alt="Huddle" class="h-8 lg:h-[3.5rem]">
+    <div class="lg:flex">
+      <img src="./images/illustration-mockups.svg" alt=" " class="mt-12 mb-16 lg:mt-20 lg:mb-0">
+      <div class="lg:ml-14 lg:mt-28 lg:mr-4">
+        <h3 class="text-2xl leading-9 font-semibold my-4 lg:text-[2.5rem] lg:leading-[4rem]">Build The Community Your
+          Fans Will Love</h3>
+        <p class="mx-1 font-['Open_Sans'] lg:text-lg">Huddle re-imagines the way we build communities. You have a voice,
+          but so
+          does
+          your audience.
+          Create connections with your users as you engage in genuine discussion.
+        </p>
+        <button
+          class="bg-white text-primaryViolet my-6 py-2 px-[4.5rem] rounded-full text-sm shadow-md shadow-neutral-700 lg:text-lg lg:px-16 lg:py-3 duration-300 hover:bg-primarySoftMagenta hover:text-white">Register</button>
+      </div>
+    </div>
+    <div class="my-10 lg:m-0 lg:ml-auto lg:mx-2 lg:my-8 lg:flex lg:justify-end">
+      <button class="btn-fa"><i class="fa-brands fa-facebook-f"></i></button>
+      <button class="btn-fa"><i class="fa-brands fa-twitter"></i></button>
+      <button class="btn-fa"><i class="fa-brands fa-instagram"></i></button>
+    </div>
+  </div>
+  <footer class="lg:-mt-8">
+    <p class="text-center text-xs">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="text-footerBlue">Frontend
+        Mentor</a>.
+      Coded by <a href="#" class="text-footerBlue">Jakub Debski</a>.
+    </p>
+  </footer>
+</body>
+
+</html>

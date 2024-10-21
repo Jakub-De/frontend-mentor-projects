@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryRed: "hsl(0, 78%, 62%)",
+            primaryCyan: "hsl(180, 62%, 55%)",
+            primaryOrange: "hsl(34, 97%, 64%)",
+            primaryBlue: "hsl(212, 86%, 64%)",
+            neutralVeryDarkBlue: "hsl(234, 12%, 34%)",
+            neutralGrayishBlue: "hsl(229, 6%, 66%)",
+            neutralVeryLightGray: "hsl(0, 0%, 98%)",
+            footerBlue: "rgb(62, 82, 163)",
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .card {
+        @apply h-[240px] bg-white my-8 p-8 border-t-4 rounded-md shadow-xl relative lg:h-[250px] lg:w-[350px] lg:m-0 lg:row-span-2;
+      }
+      .card-header {
+        @apply font-semibold text-neutralVeryDarkBlue text-xl;
+      }
+      .card-text {
+        @apply text-sm text-neutralGrayishBlue leading-6 my-2;
+      }
+      .card-image {
+        @apply absolute right-0 bottom-0 m-8;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-neutralVeryLightGray font-[Poppins]">
+  <div class="mx-6 my-10">
+    <div class="text-center text-neutralVeryDarkBlue text-2xl my-20 lg:w-[550px] lg:mx-auto lg:text-4xl">
+      <h2 class="font-extralight leading-[3.25rem]">Reliable, efficient delivery</h2>
+      <h2 class="font-semibold leading-[3.25rem]">Powered by Technology</h2>
+      <p class="text-base my-4 text-neutralGrayishBlue">
+        Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful
+      </p>
+    </div>
+    <div class="lg:grid lg:grid-cols-3 lg:grid-rows-4 lg:gap-8 lg:w-[1200px] lg:mx-auto lg:px-10 place-items-center">
+      <div class="card border-primaryCyan lg:row-start-2 lg:col-start-1">
+        <h3 class="card-header">Supervisor</h3>
+        <p class="card-text">Monitors activity to identify project roadblocks</p>
+        <img src="./images/icon-supervisor.svg" alt=" " class="card-image">
+      </div>
+      <div class="card border-primaryRed lg:row-start-1 lg:col-start-2">
+        <h3 class="card-header">Team Builder</h3>
+        <p class="card-text">Scans our talent network to create the optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" alt=" " class="card-image">
+      </div>
+      <div class="card border-primaryOrange lg:row-start-3 lg:col-start-2">
+        <h3 class="card-header">Karma</h3>
+        <p class="card-text">Regularly evaluates our talent to ensure quality</p>
+        <img src="./images/icon-karma.svg" alt=" " class="card-image">
+      </div>
+      <div class="card border-primaryBlue lg:row-start-2 lg:col-start-3">
+        <h3 class="card-header">Calculator</h3>
+        <p class="card-text">Uses data from past projects to provide better delivery estimates</p>
+        <img src="./images/icon-calculator.svg" alt=" " class="card-image">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="text-center text-xs my-8">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="text-footerBlue">Frontend
+        Mentor</a>.
+      Coded by <a href="#" class="text-footerBlue">Jakub Debski</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
