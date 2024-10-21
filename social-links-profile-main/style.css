@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.btn-primary {
+		@apply my-2 flex h-9 w-full items-center justify-evenly rounded-md bg-neutral-700 text-sm font-bold duration-200  hover:bg-neutral-600;
+	}
+}

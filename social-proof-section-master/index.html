@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Social proof section</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryVeryDarkMagenta: "hsl(300, 43%, 22%)",
+            primarySoftPink: "hsl(333, 80%, 67%)",
+            neutralDarkGrayishMagenta: "hsl(303, 10%, 53%)",
+            neutralLightGrayishMagenta: "hsl(300, 24%, 96%)",
+            neutralWhite: "hsl(0, 0%, 100%)",
+            footerBlue: "rgb(62, 82, 163)",
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .rating-box {
+        @apply py-2 my-4 bg-neutralLightGrayishMagenta text-center rounded-md text-primaryVeryDarkMagenta font-bold lg:h-[55px] lg:w-[445px] flex flex-col justify-center lg:items-center lg:justify-start lg:flex-row lg:m-0;
+      }
+      .comment-box {
+        @apply bg-primaryVeryDarkMagenta text-neutralWhite p-8 rounded-lg lg:h-[235px] lg:w-[350px];
+      }
+    }
+  </style>
+</head>
+
+<body class="font-['League_Spartan']">
+  <img src="./images/bg-pattern-top-mobile.svg" alt=" " class="absolute -z-10 top-0 w-screen lg:hidden">
+  <img src="./images/bg-pattern-bottom-mobile.svg" alt=" " class="absolute -z-10 top-1/2 w-screen lg:hidden">
+  <img src="./images/bg-pattern-top-desktop.svg" alt=" " class="hidden absolute -z-10 top-0 left-0 w-2/5 lg:block">
+  <img src="./images/bg-pattern-bottom-desktop.svg" alt=" "
+    class="hidden absolute -z-10 bottom-0 right-0 w-3/4 lg:block">
+  <div class="lg:h-screen lg:grid">
+    <div class="mx-6 my-16 lg:w-[1110px] lg:m-auto">
+      <div class="lg:flex lg:justify-between lg:items-center">
+        <div class="text-center lg:w-1/2 lg:mr-36 lg:text-start lg:my-12">
+          <h3
+            class="font-bold text-[2.5rem] leading-8 text-primaryVeryDarkMagenta mx-3 lg:m-0 lg:text-[3.25rem] lg:leading-[3rem]">
+            10,000+
+            of our users
+            love
+            our products.
+          </h3>
+          <p class="text-lg font-medium text-neutralDarkGrayishMagenta my-4 lg:my-6 lg:leading-6">We only provide great
+            products
+            combined with excellent
+            customer service.
+            See what our satisfied customers are saying about our services.</p>
+        </div>
+        <div class="my-12 lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:items-end lg:m-0">
+          <div class="rating-box lg:mr-24">
+            <div class="flex justify-center mt-2 mb-3 lg:mx-7 lg:my-0">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+            </div>
+            <p class="lg:leading-8">Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="rating-box lg:mr-12 lg:my-4">
+            <div class="flex justify-center mt-2 mb-3 lg:mx-7 lg:my-0">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+            </div>
+            <p>Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="rating-box">
+            <div class="flex justify-center mt-2 mb-3 lg:mx-7 lg:my-0">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+              <img src="./images/icon-star.svg" alt=" " class="mx-1">
+            </div>
+            <p>Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex lg:justify-between">
+        <div class="comment-box">
+          <div class="flex items-center mt-2 mb-6">
+            <img src="./images/image-colton.jpg" alt="Colton's portrait" class="h-10 rounded-full">
+            <div class="mx-6 leading-5">
+              <p class="font-bold">Colton Smith</p>
+              <p class="text-primarySoftPink">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="font-medium leading-[22px]">" We needed the same printed design as the one we had ordered a week
+            prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent! "</p>
+        </div>
+        <div class="comment-box my-4">
+          <div class="flex items-center mt-2 mb-6">
+            <img src="./images/image-irene.jpg" alt="Irene's portrait" class="h-10 rounded-full">
+            <div class="mx-6 leading-5">
+              <p class="font-bold">Irene Roberts</p>
+              <p class="text-primarySoftPink">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="font-medium leading-[22px]">" Customer service is always excellent and very quick turn around.
+            Completely
+            delighted with the simplicity of the purchase and the speed of delivery. "</p>
+        </div>
+        <div class="comment-box lg:my-8">
+          <div class="flex items-center mt-2 mb-6">
+            <img src="./images/image-anne.jpg" alt="Anne's portrait" class="h-10 rounded-full">
+            <div class="mx-6 leading-5">
+              <p class="font-bold">Anne Wallace</p>
+              <p class="text-primarySoftPink">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="font-medium leading-[22px]">" Put an order with this company and can only praise them for the very
+            high
+            standard. Will definitely use them again and recommend them to everyone! "</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center text-xs mt-2">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-footerBlue">Frontend
+      Mentor</a>.
+    Coded by <a href="#" class="text-footerBlue">Jakub Debski</a>.
+  </div>
+</body>
+
+</html>
